@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <script src="https://kit.fontavesome.com/114769ae7.js" crossorigin = "anonymous"></script>
+    <link rel="stylesheet" href="../giaodien/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="menu">
+            <li><a href="">Điện thoại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">iPhone</a></li>
+                    <li><a href="">SamSung</a></li>
+                    <li><a href="">Xiaomi</a></li>
+                    <li><a href="">Realme</a></li>
+                    <li><a href="">Vivo</a></li>
+                    <li><a href="">OPPO</a></li>
+                    <li><a href="">LG</a></li>                   
+                </ul>           
+            </li>
+            <li><a href="">Máy tính bảng</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">iPad</a></li>
+                    <li><a href="">SamSung Galaxy Tab</a></li>
+                    <li><a href="">Realme Pad</a></li>
+                    <li><a href="">Vivo Pad</a></li>
+                    <li><a href="">OPPO Pad</a></li>
+                    <li><a href="">Lenovo</a></li>                   
+                </ul> 
+            </li>
+            <li><a href="">Laptop</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Macbok</a></li>
+                    <li><a href="">MSI</a></li>
+                    <li><a href="">Asus</a></li>
+                    <li><a href="">Dell</a></li>                 
+                </ul> 
+            </li>
+            <li><a href="">Tivi</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">SamSung</a></li>
+                    <li><a href="">Xiaomi</a></li>                   
+                </ul> 
+            </li>
+            <li><a href="">Phụ kiện</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Đồng hồ</a></li>
+                    <li><a href="">Sạc dự phòng</a></li>
+                    <li><a href="">Camera</a></li>
+                    <li><a href="">Thiết bị Livestream</a></li>                
+                </ul> 
+            </li>
+            <li><a href="">Sửa chữa</a>
+                <ul class="sub-menu">
+                    <li><a href="">Điện thoại</a>
+                        <ul>
+                            <li><a href="">Android</a></li>
+                            <li><a href="">iPhone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Laptop</a></li>
+                    <li><a href="">Tablet</a>
+                        <ul>
+                            <li><a href="">Android</a></li>
+                            <li><a href="">iPad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Tivi</a></li>                  
+                </ul> 
+            </li>
+            <li><a href="">Dịch vụ</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"> <i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header>
+    <!-------------------------------------------------delivery---------------------------------------------->
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-top-wrap">
+                <div class="delivery-top">
+                    <div class="delivery-top-delivery delivery-top-item">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="delivery-top-address delivery-top-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="delivery-top-money delivery-top-item">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="delivery-content row">
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+                    <div class="delivery-content-left-dangnhap row">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <p>Đăng nhập(nếu bạn đã có tài khoản IVY)</p>
+                    </div>
+                    <div class="delivery-content-left-khachle row">
+                        <input checked name="loaikhach" type="radio"  >
+                        <p><span style="font-weight: bold;">Khách lẻ </span> (nếu bạn không muốn lưu lại thông tin)</p>
+                    </div>
+                    <div class="delivery-content-left-dangky row">
+                        <input checked name="loaikhach" type="radio"  >
+                        <p><span style="font-weight: bold;">Đăng ký </span> (Tạo mới tài khoản với thông tin bên dưới)</p>
+                    </div>
+                    <div class="delivery-content-left-input-top row">
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Họ tên <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Điện thoại <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Tỉnh/TP<span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Quận/Huyện<span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="delivery-content-left-input-button">
+                        <label for="">Địa chỉ<span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-button row">
+                        <a href=""><span>&#171;</span> <p>Quay lại giỏ hàng</p></a>
+                        <button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button>
+                    </div>
+                </div>
+                <div class="delivery-content-right">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>iPhone 16 (256GB)</td>
+                            <td>-30%</td>
+                            <td>1</td>
+                            <td><p>1.000.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 12 (256GB)</td>
+                            <td>-90%</td>
+                            <td>1</td>
+                            <td><p>2.000.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;"><p>3.000.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                            <td style="font-weight: bold;"><p>300.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;"><p>3.300.000<sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-------------------------------------------------app-container------------------------------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng IvyModa</p>
+        <div class="app-google">
+            <img src="images/appstore.png" alt="">
+            <img src="images/googleplay.png" alt="">           
+        </div>
+        <p>Nhận đăng ký bảng tin</p>
+        <input type="text" placeholder="nhập địa chỉ email">
+    </section>
+    <!-------------------------------------------------footer------------------------------------------->
+    <div class="footer-top">
+        <li><a href=""><img src="images/dathongbao.png" alt=""></a></li>
+        <li><a href=""></a>Liên hệ</li>
+        <li><a href=""></a>Tuyển dụng</li>
+        <li><a href=""></a>Giới thiệu</li>
+        <li>
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    
+    <div class="footer-bootom">
+        <p>© 2020. CÔNG TY CỔ PHẦN XÂY DỰNG VÀ ĐẦU TƯ THƯƠNG MẠI HOÀNG HÀ. MST: 0106713191. (Đăng ký lần đầu: Ngày 15 tháng 12 năm 2014, Đăng ký thay đổi ngày 24/11/2022)<br>
+           <b>GP số 426/GP-TTĐT do sở TTTT Hà Nội cấp ngày 22/01/2021<br></b> 
+            Địa chỉ: Số 89 Đường Tam Trinh, Phường Mai Động, Quận Hoàng Mai, Thành Phố Hà Nội, Việt Nam. Điện thoại: 1900.2091. Chịu trách nhiệm nội dung: Nguyễn Tiến Đạt
+        </p>
+
+    </div>
+</body>
+<script>
+
+</script>
+</html>
