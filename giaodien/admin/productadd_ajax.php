@@ -1,18 +1,16 @@
-
 <?php
-    include "class/product_class.php";
-    $product = new product;
-    $cartegory_id = $_GET['cartegory_id']
+include "class/product_class.php";
+$product = new product;
 
-?>
-
-
-<?php
-$show_brand_ajax = $product->show_brand_ajax($cartegory_id);
-if ($show_brand_ajax) {
-    while ($result = $show_brand_ajax->fetch_assoc()) {
-?>
-        <option value="<?php echo $result['brand_id'] ?>"><?php echo $result['brand_name'] ?></option>
-<?php
+if (isset($_GET['cartegory_id'])) {
+    $cartegory_id = $_GET['cartegory_id'];
+    $show_brand_ajax = $product->show_brand_ajax($cartegory_id);
+    if ($show_brand_ajax) {
+        while ($result = $show_brand_ajax->fetch_assoc()) {
+            echo '<option value="' . $result['brand_id'] . '">' . $result['brand_name'] . '</option>';
+        }
     }
-} ?>
+} else {
+    echo '<option value="">Chưa chọn danh mục</option>';
+}
+?>

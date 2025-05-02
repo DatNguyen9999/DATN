@@ -26,7 +26,7 @@ class format{
         // $title = str_replace('_','',$title);
         if($title == 'index'){
             $title = 'home';
-        }else($title == 'contact'){
+        }else if ($title == 'contact'){
             $title = 'contact';
         }
             return $title = ucfirst($title);

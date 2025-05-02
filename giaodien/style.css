@@ -39,6 +39,7 @@ header:hover{
 }
 .logo {
     flex: 1;
+  
 }
 .menu{
     flex: 3;
@@ -110,7 +111,7 @@ header:hover{
     padding-bottom: 33px;
     border-bottom: 3px solid #333;
     overflow: hidden;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 .aspect-ratio-169 {
     display: block;
